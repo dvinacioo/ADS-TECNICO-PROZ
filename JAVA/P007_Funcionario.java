@@ -16,6 +16,6 @@ public class P007_Funcionario {
     }
 
     public boolean trabalhoLiberado(){
-        return matricula.length() >= 6 && ativo;
+        return ativo && String.valueOf(matricula).length() >= 6;
     }
 }
